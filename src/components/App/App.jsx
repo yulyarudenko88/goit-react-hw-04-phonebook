@@ -43,13 +43,16 @@ export const App = () => {
 
   const changeFilter = e => setFilter(e.target.value);
 
-  const getVisibleContacts = () => {
-    const normalizedContact = filter.toLowerCase();
+  // const getVisibleContacts = () => {
 
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedContact)
-    );
-  };
+  //   return contacts.filter(contact =>
+  //     contact.name.toLowerCase().includes(normalizedContact)
+  //   );
+  // };
+  const normalizedContact = filter.toLowerCase();
+  const visibleContacts = contacts.filter(contact =>
+    contact.name.toLowerCase().includes(normalizedContact)
+  );
 
   return (
     <Wrapper>
@@ -59,7 +62,7 @@ export const App = () => {
       <Section title="Contacts">
         <Filter value={filter} onChange={changeFilter} />
         <ContactsList
-          contacts={getVisibleContacts()}
+          contacts={visibleContacts}
           onDeleteContact={deleteContact}
         />
       </Section>

@@ -23,13 +23,13 @@
 созданного репозитория на вкладку `Settings` > `Actions` > `General` как
 показано на изображении.
 
-![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+![Settings GitHub Actions  step 1](./assets/gh-actions-perm-1.png)
 
 Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
 опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
 необходимо для автоматизации процесса деплоя проекта.
 
-![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
+![Settings GitHub Actions  step 2](./assets/gh-actions-perm-2.png)
 
 Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
 репозитория-шаблона. Далее работай с ним как с любым другим личным репозиторием,
