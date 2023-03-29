@@ -31,13 +31,11 @@ export const App = () => {
     if (isExistName) {
       alert(`${name} is already in contacts list!`);
     } else {
-      // console.log(contact);
       setContacts([contact, ...contacts]);
     }
   };
 
   const deleteContact = contactId => {
-    // console.log(contactId);
     setContacts(prevState =>
       prevState.filter(contact => contact.id !== contactId)
     );

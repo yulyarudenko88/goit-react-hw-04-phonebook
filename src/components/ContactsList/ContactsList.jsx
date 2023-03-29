@@ -3,17 +3,15 @@ import { FiUser } from 'react-icons/fi';
 import { Contact } from './ContactsList.styled';
 
 export const ContactsList = ({ contacts, onDeleteContact }) => {
-  // console.log(onDeleteContact);
-
   return (
     <ul>
       {contacts.map(({ id, name, number }) => (
-        <Contact key={id} >
+        <Contact key={id}>
           <FiUser />
-          {name}: {number}          
-          <button type="button"  onClick={() => onDeleteContact(id)}>
-          Delete
-        </button>
+          {name}: {number}
+          <button type="button" onClick={() => onDeleteContact(id)}>
+            Delete
+          </button>
         </Contact>
       ))}
     </ul>
