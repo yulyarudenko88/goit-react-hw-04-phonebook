@@ -53,9 +53,9 @@ export const App = () => {
 
   const changeFilter = e => setFilter(e.target.value);
 
-  const normalizedContact = filter.toLowerCase();
+  // const normalizedContact = filter.toLowerCase();
   const visibleContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(normalizedContact)
+    contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
